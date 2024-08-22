@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>الارض</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <style>
+        body {
+            background-color: #494747;
+            background-image: url(back.jpg);
+            background-size: 40%;
+            background-repeat: repeat;
+
+
+        }
+
+        .earth {
+            width: 300px;
+            height: 300px;
+            position: fixed;
+            top: 0;
+            right: 0;
+            left: 0;
+            bottom: 0;
+            margin: auto;
+            overflow: hidden;
+            border-radius: 50%;
+            box-shadow: 0 0 15px black;
+            transition: 3s;
+        }
+
+        .earth div {
+            width: 200%;
+            height: 100%;
+            animation: spin 30s linear alternate infinite;
+
+        }
+
+        #imag {
+            width: 100%;
+            height: 100%;
+            size: cover;
+        }
+
+        @keyframes spin {
+
+
+            to {
+                transform: translateX(-50%);
+            }
+
+        }
+
+        .earth:hover {
+            transform: scale(2);
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <div class="earth" id="earth">
+        <div>
+            <img src="1.jpg" id="imag" usemap="#imag">
+            <map name="imag">
+                <area shape="rect" coords="50,30,100,70" title="امريكا الشماليه" style="cursor: pointer;">
+                <area shape="rect" coords="80,30,150,70" title="كندا" style="cursor: pointer;">
+                <area shape="rect" coords="50,80,120,130" title="الولايات المتحدة" style="cursor: pointer;">
+                <area shape="rect" coords="50,100,100,170" title="المكسيك" style="cursor: pointer;">
+                <area shape="rect" coords="30,150,80,200" title="المحيط الهادي" style="cursor: pointer;">
+                <area shape="rect" coords="100,180,160,250" title="امريكا الجنوبيه " style="cursor: pointer;">
+                <area shape="rect" coords="50,100,200,300" title="المحيط الاطلنطي" style="cursor: pointer;">
+                <area shape="rect" coords="300,100,320,250" title="البجر المتوسط" style="cursor: pointer;">
+                <area shape="rect" coords="300,80,350,200" title="اوروبا " style="cursor: pointer;">
+                <area shape="rect" coords="400,30,600,150" title="اسيا " style="cursor: pointer;">
+                <area shape="rect" coords="400,150,500,300" title="المحيط الهندي " style="cursor: pointer;">
+                <area shape="rect" coords="500,150,600,300" title=" استراليا " style="cursor: pointer;">
+                <area shape="rect" coords="250,150,300,250" title="افريقيا" style="cursor: pointer;">
+
+
+            </map>
+        </div>
+    </div>
+</body>
+
+</html>
